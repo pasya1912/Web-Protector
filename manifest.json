@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Whatsapp & Facebook Protector for Chrome",
-    "version": "1.0.1",
+    "name": "Web Protector for Chrome",
+    "version": "1.0",
     "description": "Protect specific websites from being accessed by other.",
     "author": "Rafli Pasya",
     "content_scripts": [
@@ -23,5 +23,5 @@
         "tabs",
         "storage"
     ],
-    "redirect_url": "https://www.google.com"
+    "redirect_url":"https://google.com"
 }

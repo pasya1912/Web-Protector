@@ -20,9 +20,10 @@ Script ini memiliki fitur sebagai berikut.
 ### Const
 - Hanya berguna pada orang awam komputer ( Orang tua terutama )
 - Tidak work untuk anak IT
-- Browser uninstall = proteksi mati lah wkwk.## Instalasi
+- Browser uninstall = proteksi mati lah wkwk.
 
-Untuk built `.crx` file yang tinggal pakai bisa cek di release.
+## Instalasi
+Hanya Support Load from Unpacked Source !
 
 - Download Project ini
 - Buka `manifest.json`
@@ -32,7 +33,7 @@ Untuk built `.crx` file yang tinggal pakai bisa cek di release.
 {
     "manifest_version": 3,
     "name": "[INI JUDUL ASAL ISI DENGAN ASAL]",
-    "version": "1.0.1",
+    "version": "1.0",
     "description": "[INI JUDUL ASAL ISI DENGAN ASAL]",
     "author": "Rafli Pasya",
     "content_scripts": [
@@ -54,7 +55,7 @@ Untuk built `.crx` file yang tinggal pakai bisa cek di release.
         "tabs",
         "storage"
     ],
-    "redirect_url": "https://www.google.com"
+    "redirect_url":"https://google.com"
 }
 ```
 - Pada name dan description ubah menjadi asal atau hal lain yang terpercaya seperti "Buku belajar anjay"
@@ -63,8 +64,10 @@ Untuk built `.crx` file yang tinggal pakai bisa cek di release.
 - Buka Chrome / Edges -> Extension
 - Setelah itu nyalakan developer mode.
 - load unpack extension.
-Bebas pilih apakah mau dipack dulu atau tidak.
-- Jika pakai Edges bisa drag and drop file .crx nya.## Penggunaan
+- Jika pakai Edges bisa drag and drop file .crx nya.
+- Disable Developer Mode
+
+## Penggunaan
 Setelah riset untuk penggunaanya teraman tanpa jejak, segala bentuk setting diatur melalui keyword keyboard pada website google.
 
 [Google](https://google.com)
