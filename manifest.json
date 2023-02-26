@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Web Protector for Chrome",
+    "version": "1.0",
+    "description": "Protect specific websites from being accessed by other.",
+    "author": "Rafli Pasya",
+    "content_scripts": [
+        {
+            "matches": ["*://*.whatsapp.com/*", "*://*.facebook.com/*"],
+            "js": ["web.js"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": ["*://*.google.com/*"],
+            "js": ["setting.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "redirect_url":"https://google.com"
+}
